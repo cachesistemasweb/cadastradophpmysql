@@ -9,6 +9,13 @@
 <body>
 <?php include("config.php"); ?>
 
+
+
+<h1>Trabalho PHP </h1>
+<h5>cadastro e consulta usando MySQL</h5>
+
+<h3><a href="formulario.html"  title="Cadastrar Livros">Cadastrar Livros<a/></h3><br>
+
 <?php
 
 $result_livro = "SELECT * FROM livros";
@@ -17,18 +24,23 @@ $total_livro = mysqli_num_rows($resultado_livro);
 
 
 while($rows_livros = mysqli_fetch_assoc($resultado_livro)) {
-    $id_livro = $rows_livros['id'];
+    $codigo_livro = $rows_livros['cod_livro'];
     $nome_livro = $rows_livros['nome_livro'];
     $desc_livro = $rows_livros['desc_livro'];
 
-    echo "ID do Livro: $id_livro <br> Nome do Livro:  ".utf8_encode($nome_livro)." <br>  Descrição do Livro: ".utf8_encode($desc_livro)." <br><p>";
+    echo " XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
+           X     Código do Livro: <strong>$codigo_livro</strong>                                   <br> 
+           X     Nome do Livro:   <strong>".utf8_encode($nome_livro)."</strong>                    <br> 
+           X     Descrição do Livro:<strong>".utf8_encode($desc_livro)."  </strong>                <br> 
+           XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
+           <br>";
 }
 
 
 
 ?>
 
-<a href="formulario.html"  title="Cadastrar Livros">Cadastrar Livros<a/>
+
 
 </body>
 </html>
