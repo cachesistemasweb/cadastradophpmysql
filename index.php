@@ -27,6 +27,9 @@ while($rows_livros = mysqli_fetch_assoc($resultado_livro)) {
 
 
 ?>
+
+<a href="formulario.html"  title="Cadastrar Livros">Cadastrar Livros<a/>
+
 </body>
 </html>
 
