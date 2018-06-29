@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 29-Jun-2018 às 15:40
+-- Generation Time: 29-Jun-2018 às 19:03
 -- Versão do servidor: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -33,18 +33,15 @@ CREATE TABLE `livros` (
   `cod_livro` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `nome_livro` varchar(250) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `desc_livro` varchar(250) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `livros`
 --
 
 INSERT INTO `livros` (`id`, `cod_livro`, `nome_livro`, `desc_livro`) VALUES
-(1, '1164', 'Java Solid', 'Java de padrões de projeto'),
-(2, '123498', 'Lua de mel', 'lua de mel livro 2'),
-(3, '45645987', 'Java e PHP', 'Java e php aula'),
-(4, '4564', 'matheus', 'matehus sala'),
-(5, '4564', 'matheus', 'matehus sala');
+(1, '01246', 'PHP com MySQL ', 'Aprenda PHP com MySQL '),
+(2, '01246', 'PHP com HTML', 'Aprenda colocar Script PHP no HTML');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +61,7 @@ ALTER TABLE `livros`
 -- AUTO_INCREMENT for table `livros`
 --
 ALTER TABLE `livros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
